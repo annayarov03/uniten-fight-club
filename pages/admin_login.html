@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/fight_club.png">
+    <title>Admin Login</title>
+</head>
+<body>
+
+    <!--this is the navigation bar-->
+    <nav class="navbar">
+    <img src="/images/fight_club.png" alt="logo">
+    <div class="nav-links">
+      <a href="/index.html#about">About</a>
+      <a href="/index.html#event">Events</a>
+      <a href="/index.html">Home</a>
+      <a href="/index.html#contact">Contact</a>
+    </div>
+    <div class="auth-buttons">
+        <a href="user_login.html">Login</a>
+      <a href="user_register.html">Register</a>
+    </div>
+  </nav>
+
+  <!--main title-->
+  <div class="main">
+
+    <img src="/images/fight_club.png" alt="logo">
+    <h2>Admin Login</h2>
+    <p>For tournament organizers only</p>
+
+  </div>
+
+  <div class="admin-form">
+    <form name="admin-login" method="post" action="">
+
+        <label for="user">Username</label><br>
+        <input name="username" type="text" id="user" required><br><br>
+
+        <label for="pass">Password</label><br>
+        <input name="password" type="password" id="pass" required><br><br>
+
+        <input type="submit" value="LOGIN"> <br><br>
+
+    </form>
+
+    <div>
+        <a href="/index.html">Back to Home</a>
+    </div>
+  </div>
+
+  <!--print error massage using php-->
+  <div>
+
+
+  </div>
+    
+</body>
+</html>

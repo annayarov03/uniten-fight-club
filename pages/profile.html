@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/fight_club.png">
+    <title>User's Profile</title>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <img src="/images/fight_club.png" alt="logo">
+        <div class="nav-links">
+            <a href="user_home.html">Home</a>
+            <a href="/pages/division.html">Register Division</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="">Profile</a>
+            <a href="">Logout</a>
+        </div>
+    </nav>
+
+    
+
+    <!-- PROFILE FORM Update -->
+    <div class="profile-container">
+
+        <h2>My Profile</h2>
+
+
+        <form name="user-profile" method="post" action="">
+
+            <label for="new-user">Username</label><br>
+            <input name="username" type="text" id="new-user" required readonly><br><br>
+
+            <label for="f-name">First Name</label><br>
+            <input name="first-name" type="text" id="f-name" required><br><br>
+
+            <label for="l-name">Last Name</label><br>
+            <input name="last-name" type="text" id="l-name" required><br><br>
+
+            <label for="email">Email Address</label><br>
+            <input name="email" type="email" id="email" required><br><br>
+            
+            <input type="submit" value="Edit Profile"> 
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+    <br><br><br><br><br><br><br><br>
+
+    <!--Divition form update-->
+    <div class="division-container">
+
+        <h2>Division Details</h2>
+<p>Update your age class and stats for the tournament.</p>
+
+<form name="user-division" method="post" action="">
+<label>
+  <input type="radio" name="age_class" value="juvenile" required>
+  Juvenile
+</label>
+<label>
+  <input type="radio" name="age_class" value="adult" required>
+  Adult
+</label>
+<br><br>
+
+
+<label for="height">Height (cm)</label><br>
+<input name="height" type="number" id="height" step="0.1" required><br><br>
+
+<label for="weight-class">Weight Class</label><br>
+<select id="weight-class" name="weight_class" required>
+  <option value="">Select weight class</option>
+  <option value="Flyweight">Flyweight (up to 56 kg)</option>
+  <option value="Bantamweight">Bantamweight (57-61 kg)</option>
+  <option value="Featherweight">Featherweight (62-66 kg)</option>
+  <option value="Lightweight">Lightweight (67-70 kg)</option>
+  <option value="Welterweight">Welterweight (71-77 kg)</option>
+  <option value="Middleweight">Middleweight (78-84 kg)</option>
+  <option value="Light Heavyweight">Light Heavyweight (85-93 kg)</option>
+  <option value="Heavyweight">Heavyweight (94-120 kg)</option>
+</select><br><br>
+
+<label for="level">Experience Level</label><br>
+<select id="level" name="level" required>
+  <option value="">Select</option>
+  <option value="Beginner">Beginner</option>
+  <option value="Amateur">Amateur</option>
+  <option value="Pro Fighter">Pro Fighter</option>
+</select><br><br>
+
+<input type="submit" value="Edit Division"> 
+
+</form>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+
+            <div class="left-footer">
+                <h4>Fight Club</h4>
+                <p>© 2025 MMA UNITEN's Fight Club - All rights reserved.</p>
+            </div>
+
+            <div class="middle-footer" id="contact">
+                <h4>Contact Us</h4>
+                <p>+60 18-396 0047</p>
+                <p>Email: <a href="mailto:fightclub@uniten.edu.my">fightclub@uniten.edu.my</a></p>
+            </div>
+
+            <div class="right-footer">
+                <h4>Follow Us On</h4>
+                <a target="_blank" href="https://www.instagram.com/malaysiafightleague/">Instagram</a>
+                <a target="_blank" href="https://www.youtube.com/@malaysiafightleague">YouTube</a>
+                <a target="_blank" href="https://www.tiktok.com/@malaysiafightleague?_t=8avi41ssbah&_r=1">TikTok</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="/images/fight_club.png">    <link rel="stylesheet" href="style.css"><!-- optional, use your CSS file -->
+</head>
+<body>
+
+    <!-- Navigation bar -->
+     <nav class="navbar">
+        <img src="/images/fight_club.png" alt="logo">
+        <div class="nav-links">
+            <a href="admin_home.html">Home</a>
+            <a href="admin_dashbord.html">Dashboard</a>
+            
+        </div>
+        <div class="auth-buttons">
+            <span class="admin-label">Admin</span>
+            <a href="">Logout</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+
+        <h1>Admin Dashboard</h1>
+        <p>Overview of registered users and division registrations.</p>
+
+        <!-- Registered Users -->
+        <section class="admin-section">
+            <h2>Registered Users</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row (PHP will replace with real data) -->
+                    <tr>
+                        <td>1</td>
+                        <td>Aiman</td>
+                        <td>Rahman</td>
+                        <td>aiman01</td>
+                        <td>aiman@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!--This place is where admin can see all records and deleat if he wants , this is your part PHP guy-->
+        <!-- Division Registrations -->
+        <section class="admin-section">
+            <h2>Division Registrations</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Division</th>
+                        <th>Weight Class</th>
+                        <th>Height (cm)</th>
+                        <th>Experience Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example rows for Juvenile and Adult (to be replaced by PHP) -->
+                    <tr>
+                        <td>1</td>
+                        <td>Juvenile</td>
+                        <td>Lightweight</td>
+                        <td>172</td>
+                        <td>Amateur</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Adult</td>
+                        <td>Welterweight</td>
+                        <td>180</td>
+                        <td>Pro Fighter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="left-footer">
+                <h4>Fight Club</h4>
+                <p>© 2025 MMA UNITEN's Fight Club - All rights reserved.</p>
+            </div>
+            <div class="middle-footer">
+                <h4>Contact Us</h4>
+                <p>+60 18-396 0047</p>
+                <p>Email: <a href="mailto:fightclub@uniten.edu.my">fightclub@uniten.edu.my</a></p>
+            </div>
+            <div class="right-footer">
+                <h4>Follow Us On</h4>
+                <a target="_blank" href="https://www.instagram.com/malaysiafightleague/">Instagram</a>
+                <a target="_blank" href="https://www.youtube.com/@malaysiafightleague">YouTube</a>
+                <a target="_blank" href="https://www.tiktok.com/@malaysiafightleague">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

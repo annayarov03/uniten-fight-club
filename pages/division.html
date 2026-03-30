@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/fight_club.png">
+    <title>Division Registration</title>
+</head>
+<body>
+    
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        
+        <img src="/images/fight_club.png" alt="logo">
+        <div class="nav-links">
+            <a href="user_home.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#event">Events</a>
+            <a href="#contact">Contact</a>
+            <a href="">Register Division</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="/pages/profile.html">Profile</a>
+            <a href="">Logout</a>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-division">
+
+    <!--Add a welcom massage with the fighters name plz php guy-->
+        <div class="division-title">
+            <h2>Register for a Division</h2>
+            <p>Select your age group and fill in your details</p>
+
+        </div>
+
+        <!--divition cards-->
+        <div class="division-cards">
+
+            <div class="divition-card">
+                <a href="#form">
+                <img src="/images/fighter juv.webp" width="200">
+                <h3>Juvenile Division</h3>
+                <p>For younger fighters. Age group as defined by the event rules.</p>
+                    </a>
+            </div>
+
+            <div class="divition-card">
+                <a href="#form">
+                <img src="/images/adalt fighter.jpg" width="200">
+                <h3>Adult Division</h3>
+                <p>For adult fighters. Age group as defined by the event rules.</p>
+                    </a>
+            </div>
+
+        </div>
+
+
+        <!--Juvenile from-->
+        <div class="juvenile-form" id="form">
+
+            <h3>Juvenile Division Details</h3>
+            <p>Please enter your stats for the Juvenile division.</p>
+
+            <form name="Jform" method="post" action="">
+
+                Age Class<br>
+
+                <label for="juvenile">Juvenile</label>
+                <input type="radio" name="age_class" value="juvenile" id="juvenile" required>
+
+                <label for="adult">Adult</label>
+                <input type="radio" name="age_class" value="adult" id="adult" required><br><br>
+
+                <label for="height">Height (cm)</label><br>
+                <input name="height" type="number" id="height" step="0.1" required><br><br>
+
+                <label for="weight-class">Weight Class</label><br>
+                <select id="weight-class" name="weight_class" required>
+                     <option value="">Select weight class</option>
+                    <option value="Flyweight">Flyweight (up to 56 kg)</option>
+                    <option value="Bantamweight">Bantamweight (57-61 kg)</option>
+                    <option value="Featherweight">Featherweight (62-66 kg)</option>
+                    <option value="Lightweight">Lightweight (67-70 kg)</option>
+                    <option value="Welterweight">Welterweight (71-77 kg)</option>
+                    <option value="Middleweight">Middleweight (78-84 kg)</option>
+                    <option value="Light Heavyweight">Light Heavyweight (85-93 kg)</option>
+                     <option value="Heavyweight">Heavyweight (94-120 kg)</option>
+                </select><br><br>
+
+                <label for="level">Experience Level</label><br>
+                <select id="level" name="level" required>
+                    <option value="">Select</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Amateur">Amateur</option>
+                    <option value="Pro Fighter">Pro Fighter</option>
+
+                </select><br><br>
+
+                <input type="submit" value="Save Division">
+
+
+            </form>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+
+            <div class="left-footer">
+                <h4>Fight Club</h4>
+                <p>© 2025 MMA UNITEN's Fight Club - All rights reserved.</p>
+            </div>
+
+            <div class="middle-footer" id="contact">
+                <h4>Contact Us</h4>
+                <p>+60 18-396 0047</p>
+                <p>Email: <a href="mailto:fightclub@uniten.edu.my">fightclub@uniten.edu.my</a></p>
+            </div>
+
+            <div class="right-footer">
+                <h4>Follow Us On</h4>
+                <a target="_blank" href="https://www.instagram.com/malaysiafightleague/">Instagram</a>
+                <a target="_blank" href="https://www.youtube.com/@malaysiafightleague">YouTube</a>
+                <a target="_blank" href="https://www.tiktok.com/@malaysiafightleague?_t=8avi41ssbah&_r=1">TikTok</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
