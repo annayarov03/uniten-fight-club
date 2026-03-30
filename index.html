@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Excentrica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/fight_club.png">
+    <title>MMA UNITEN's Fight Club</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <!-- no leading / and use actual filename -->
+        <source src="video/MMA cenema.mp4" type="video/mp4">
+    </video>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <img src="images/fight_club.png" alt="logo">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#event">Events</a>
+            <a href="#">Home</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="php/user_login.php">Login</a>
+            <a href="php/user_register.php">Register</a>
+            <a href="php/admin_login.php">Admin Login</a>
+        </div>
+    </nav>
+
+    <!-- WELCOME SECTION -->
+    <div class="welcome">
+        <h1>MMA Tournament Registration System</h1>
+        <p>Welcome to UNITEN's Fight Club.</p>
+        <p>Register, manage categories, and track fighters.</p>
+    </div>
+
+    <!-- EVENTS -->
+<div class="events" id="event">
+    <h2>Events</h2>
+
+    <div class="events-grid">
+
+        <div class="event1">
+            <img src="images/fighter juv.webp" alt="">
+            <h3>UNITEN MMA Beginner Night</h3>
+            <p>Short intro sparring event for new fighters to experience MMA in a safe, controlled setting.</p>
+            <a href="php/user_register.php">Register as Fighter</a>
+        </div>
+
+        <div class="event2">
+            <img src="images/adalt fighter.jpg" alt="">
+            <h3>UNITEN Fight Club Tournament</h3>
+            <p>Main internal competition where registered fighters from all divisions face off in bracket-style matches.</p>
+            <a href="php/user_login.php">View Divisions</a>
+        </div>
+
+    </div>
+</div>
+
+    <!-- ABOUT -->
+    <div class="about" id="about">
+        <h2>About UNITEN Fight Club</h2>
+        <p>
+            UNITEN's MMA Fight Club organizes annual tournaments where fighters compete across multiple categories.
+            Our system helps participants register easily, while admins manage categories and matchups efficiently.
+        </p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards">
+
+        <div class="card">
+            <h2>New Fighter?</h2>
+            <p>Create an account and join the tournament.</p>
+            <a href="php/user_register.php">Register as User</a>
+        </div>
+
+        <div class="card">
+            <h2>Already Registered?</h2>
+            <p>Login to update your profile or categories.</p>
+            <a href="php/user_login.php">User Login</a>
+        </div>
+
+        <div class="card">
+            <h2>Admin Panel</h2>
+            <p>Login to manage categories and participants.</p>
+            <a href="php/admin_login.php">Admin Login</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+
+            <div class="left-footer">
+                <h4>Fight Club</h4>
+                <p>© 2025 MMA UNITEN's Fight Club - All rights reserved.</p>
+            </div>
+
+            <div class="middle-footer" id="contact">
+                <h4>Contact Us</h4>
+                <p>+60 18-396 0047</p>
+                <p>Email: <a href="mailto:fightclub@uniten.edu.my">fightclub@uniten.edu.my</a></p>
+            </div>
+
+            <div class="right-footer">
+                <h4>Follow Us On</h4>
+                <a target="_blank" href="https://www.instagram.com/malaysiafightleague/">Instagram</a>
+                <a target="_blank" href="https://www.youtube.com/@malaysiafightleague">YouTube</a>
+                <a target="_blank" href="https://www.tiktok.com/@malaysiafightleague?_t=8avi41ssbah&_r=1">TikTok</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
