@@ -1,0 +1,160 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY (DASHBOARD FLOW)
+========================= */
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, rgba(255, 0, 0, 0.234), transparent 40%),
+        linear-gradient(180deg, #050000, #0b0000);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+}
+
+/* =========================
+   NAVBAR (MATCH DASHBOARD)
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 36px;
+    background: rgba(10, 0, 0, 0.95);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.355);
+}
+
+.nav-logo img {
+    height: 42px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff2b2b;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #ff2b2b;
+}
+
+/* USER AREA */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-username {
+    font-size: 13px;
+    color: #ffb3b3;
+}
+
+.btn-logout {
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn-logout:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+/* =========================
+   ADMIN HOME = DASHBOARD FLOW
+========================= */
+.admin-home-section {
+    padding: 40px 30px;
+}
+
+.admin-home-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* PAGE TITLE */
+.admin-home-container h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ff2b2b;
+}
+
+.admin-home-container p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* =========================
+   DASHBOARD STYLE CARDS
+========================= */
+.admin-home-actions {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+/* CARD */
+.admin-home-actions a {
+    display: block;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    text-decoration: none;
+    color: #eee;
+    transition: 0.3s ease;
+}
+
+.admin-home-actions a:hover {
+    background: rgba(255, 0, 0, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+/* CARD TEXT */
+.admin-home-actions a::before {
+    content: "➤ ";
+    color: #ff2b2b;
+    font-weight: bold;
+}
+
+/* BUTTON COLORS INSIDE CARDS */
+.btn-primary,
+.btn-secondary {
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -1,0 +1,265 @@
+/* ===============================
+   GLOBAL RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: radial-gradient(circle at top, #1a0000, #000);
+    color: #eee;
+    min-height: 100vh;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 40px;
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.nav-logo img {
+    height: 42px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #ff1a1a;
+}
+
+.nav-links a.active {
+    color: #ff1a1a;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff1a1a;
+    box-shadow: 0 0 8px #ff1a1a;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-username {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.btn-logout {
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #ff1a1a;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: #cc0000;
+    box-shadow: 0 0 12px #ff1a1a;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.admin-home-section,
+.admin-dashboard-section {
+    padding: 60px 20px;
+}
+
+.admin-home-container,
+.admin-dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===============================
+   HEADINGS & TEXT
+================================ */
+h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #ff1a1a;
+    text-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #ff4d4d;
+}
+
+p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ff1a1a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #cc0000;
+    box-shadow: 0 0 15px #ff1a1a;
+}
+
+.btn-secondary {
+    border: 2px solid #ff1a1a;
+    color: #ff1a1a;
+}
+
+.btn-secondary:hover {
+    background: #ff1a1a;
+    color: black;
+}
+
+/* ===============================
+   ADMIN CARDS
+================================ */
+.admin-card {
+    background: rgba(20, 0, 0, 0.8);
+    border-radius: 14px;
+    padding: 26px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.08);
+}
+
+/* ===============================
+   TABLES
+================================ */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 12px;
+    text-align: center;
+}
+
+.admin-table thead {
+    background: rgba(255, 0, 0, 0.15);
+}
+
+.admin-table th {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.admin-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.admin-table tbody tr:hover {
+    background: rgba(255, 0, 0, 0.08);
+}
+
+/* ===============================
+   DANGER BUTTON
+================================ */
+.btn-danger {
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 16px;
+    background: #b30000;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background: #ff1a1a;
+    box-shadow: 0 0 10px #ff1a1a;
+}
+
+/* ===============================
+   EXTRA LINKS
+================================ */
+.admin-extra {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.admin-extra a {
+    color: #ff1a1a;
+    text-decoration: none;
+}
+
+.admin-extra a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+    .nav-username {
+        display: none;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .admin-card {
+        padding: 18px;
+    }
+
+    .admin-table {
+        font-size: 14px;
+    }
+}

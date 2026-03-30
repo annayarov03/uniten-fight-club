@@ -1,0 +1,193 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY (DASHBOARD FLOW)
+========================= */
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, rgba(255, 0, 0, 0.18), transparent 45%),
+        linear-gradient(180deg, #050000, #0b0000);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+}
+
+/* =========================
+   NAVBAR (CONSISTENT)
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 36px;
+    background: rgba(10, 0, 0, 0.95);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.25);
+}
+
+.nav-logo img {
+    height: 42px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff2b2b;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #ff2b2b;
+}
+
+/* USER INFO */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-username {
+    font-size: 13px;
+    color: #ffb3b3;
+}
+
+.btn-logout {
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn-logout:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+/* =========================
+   USER HOME DASHBOARD
+========================= */
+.user-home-section {
+    padding: 40px 30px;
+}
+
+.user-home-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITLE */
+.user-home-container h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #ff2b2b;
+}
+
+.user-home-container p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+/* =========================
+   WELCOME BLOCK (CENTERED)
+========================= */
+.welcome-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* LOGO ABOVE TEXT */
+.welcome-logo {
+    width: 110px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 18px rgba(255, 0, 0, 0.5));
+}
+
+/* TITLE */
+.welcome-block h1 {
+    font-size: 28px;
+    color: #ff2b2b;
+    margin-bottom: 8px;
+}
+
+/* SUBTEXT */
+.welcome-block p {
+    font-size: 14px;
+    color: #ccc;
+    max-width: 520px;
+}
+
+
+/* =========================
+   DASHBOARD ACTION CARDS
+========================= */
+.user-home-actions {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+/* CARD STYLE */
+.user-home-actions a {
+    display: block;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    text-decoration: none;
+    color: #eee;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.user-home-actions a:hover {
+    background: rgba(255, 0, 0, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+}
+
+/* ARROW INDICATOR */
+.user-home-actions a::before {
+    content: "➤ ";
+    color: #ff2b2b;
+    font-weight: bold;
+}
+
+/* BUTTON CLASSES INSIDE LINKS */
+.btn-primary,
+.btn-secondary {
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 15px;
+}

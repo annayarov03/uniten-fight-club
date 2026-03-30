@@ -1,0 +1,251 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(180deg, #050505, #000);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background: rgba(10, 10, 10, 0.95);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.nav-logo img {
+    width: 45px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #ff2b2b;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-username {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.btn-logout {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.btn-logout:hover {
+    box-shadow: 0 0 18px rgba(255, 0, 0, 1);
+}
+
+/* =========================
+   USER HOME
+========================= */
+.user-home-section {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at center, rgba(255,0,0,0.15), transparent 65%);
+}
+
+.user-home-container {
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(12, 12, 12, 0.95);
+    border-radius: 18px;
+    box-shadow:
+        0 0 30px rgba(255, 0, 0, 0.35),
+        inset 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.user-home-container img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.user-home-container h1 {
+    color: #ff2b2b;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.user-home-container p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.user-home-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff0000, #b00000);
+    box-shadow: 0 0 18px rgba(255, 0, 0, 0.8);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 1);
+}
+
+.btn-secondary {
+    background: #1a1a1a;
+    border: 1px solid #ff2b2b;
+}
+
+.btn-secondary:hover {
+    background: #ff2b2b;
+}
+
+/* =========================
+   PROFILE DASHBOARD
+========================= */
+.profile-section {
+    padding: 40px 20px;
+    background:
+        radial-gradient(circle at top, rgba(255,0,0,0.12), transparent 60%);
+}
+
+.profile-dashboard {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* =========================
+   PROFILE CARDS
+========================= */
+.profile-card {
+    background: rgba(15, 15, 15, 0.96);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow:
+        0 0 20px rgba(255, 0, 0, 0.3),
+        inset 0 0 12px rgba(255, 0, 0, 0.15);
+    transition: 0.25s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 0 30px rgba(255, 0, 0, 0.5),
+        inset 0 0 15px rgba(255, 0, 0, 0.25);
+}
+
+.profile-card h1,
+.profile-card h2 {
+    color: #ff2b2b;
+    margin-bottom: 8px;
+}
+
+.profile-card p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   FORMS
+========================= */
+.profile-form input,
+.profile-form select,
+.division-form input,
+.division-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #0e0e0e;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.profile-form input:focus,
+.profile-form select:focus,
+.division-form input:focus,
+.division-form select:focus {
+    outline: none;
+    border-color: #ff2b2b;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+
+/* =========================
+   MESSAGES
+========================= */
+.error-message {
+    background: rgba(255, 0, 0, 0.18);
+    color: #ff6b6b;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.success-message {
+    background: rgba(0, 255, 0, 0.18);
+    color: #7dff7d;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .user-home-container {
+        padding: 30px 20px;
+    }
+}
